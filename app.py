@@ -17,6 +17,14 @@ def create_schedule():
 def query_and_send_notification():
     return "Notification sent"
 
+
+@app.route('/child', methods = ['GET'])
+def get_child(): 
+   child_id = request.form.get("id")
+   data = sample_data.child[child_id]
+    return data
+   
+
 if __name__ == '__main__':
     print("HI")
     app.run()
