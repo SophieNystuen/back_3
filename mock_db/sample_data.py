@@ -26,10 +26,19 @@ schedule = {
 
     child = { 
     "child_id_1": { 
-        "name" : "joe" 
+        "name" : "matt" 
         "age" : "10" 
         "sex" : "male" 
         "intrests" : "playing tennis"   
+    }
+
+}
+child = { 
+    "child_id_2": { 
+        "name" : "kiara" 
+        "age" : "6" 
+        "sex" : "female" 
+        "intrests" : ""   
     }
 
 }
