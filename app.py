@@ -58,5 +58,14 @@ def get_events():
 def trigger_events():
     return
 
+
+@app.route('/child', methods = ['GET'])
+def get_child(): 
+   child_id = request.form.get("id")
+   data = sample_data.child[child_id]
+    return data
+   
+
 if __name__ == '__main__':
+
     app.run()
